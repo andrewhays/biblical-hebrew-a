@@ -6,14 +6,17 @@ export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [quizStarted, setQuizStarted] = useState(false);
+  const [quizCompleted, setQuizCompleted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [unitRange, setUnitRange] = useState('1-10'); // Initialize with the default range
   const [numQuestions, setNumQuestions] = useState(10);
   const [category, setCategory] = useState('vocab');
   const [questionsAnswered, setQuestionsAnswered] = useState(0);
 
+  // Track questions that have been asked
+  const [askedQuestions, setAskedQuestions] = useState([]);
+
   useEffect(() => {
-    // Inside your useEffect where you fetch questions:
     const fetchQuestions = async () => {
       setLoading(true);
       try {
@@ -26,7 +29,6 @@ export default function App() {
 
         const data = await response.json();
 
-        // Filter questions based on the unitRange
         const [unitStart, unitEnd] = unitRange.split('-').map(Number);
 
         const filteredQuestions = data.filter(
@@ -34,16 +36,12 @@ export default function App() {
             questionData.Unit >= unitStart && questionData.Unit <= (unitEnd || unitStart)
         );
 
-        // Randomly shuffle the filtered questions
         const shuffledQuestions = shuffleArray(filteredQuestions);
 
-        // Select the first numQuestions for the quiz
         const selectedQuestions = shuffledQuestions.slice(0, numQuestions);
 
-        // Process questions based on category
         const formattedQuestions = selectedQuestions.map((questionData) => {
           if (category === 'grammar') {
-            // Process grammar questions
             const { question, correct_answer, incorrect_answers } = questionData;
             const allAnswers = shuffleArray([correct_answer, ...incorrect_answers]);
             return {
@@ -52,16 +50,13 @@ export default function App() {
               incorrectAnswers: allAnswers,
             };
           } else if (category === 'vocab') {
-            // Process vocab questions
             const { Hebrew, Transliteration, Translation, Unit } = questionData;
 
-            // Define the possible headers based on the unit and probability
             const possibleHeaders = ['Translation'];
             if (Unit >= 1 && Unit <= 10 && Math.random() <= 0.2) {
               possibleHeaders.push('Transliteration');
             }
 
-            // Select a header randomly from the possible options
             const selectedHeader =
               possibleHeaders[Math.floor(Math.random() * possibleHeaders.length)];
 
@@ -78,7 +73,6 @@ export default function App() {
               data
             );
 
-            // Shuffle the answers and insert the correct answer at a random position
             const allAnswers = shuffleArray(incorrectAnswers);
             allAnswers.splice(Math.floor(Math.random() * 4), 0, correctAnswer);
 
@@ -88,15 +82,16 @@ export default function App() {
               incorrectAnswers: allAnswers,
             };
           }
-          return null; // Skip questions that don't match the selected category
+          return null;
         });
 
-        // Remove null values from the formatted questions array
         const finalQuestions = formattedQuestions.filter((question) => question !== null);
 
         setQuestions(finalQuestions);
         setCurrentQuestion(0);
         setScore(0);
+        setQuizCompleted(false); // Reset quiz completion status
+        setAskedQuestions([]);
       } catch (error) {
         console.error('Error fetching questions:', error);
       } finally {
@@ -118,21 +113,26 @@ export default function App() {
 
     if (questionsAnswered === numQuestions - 1) {
       setQuizStarted(false);
+      setQuizCompleted(true);
+      return;
     }
 
-    const nextQuestion = currentQuestion + 1;
-
-    if (nextQuestion < numQuestions) {
-      setCurrentQuestion(nextQuestion);
+    if (currentQuestion >= questions.length - 1) {
+      const shuffledQuestions = shuffleArray(questions);
+      setQuestions(shuffledQuestions);
+      setCurrentQuestion(0);
     } else {
-      // All questions answered, do nothing here
+      setCurrentQuestion(currentQuestion + 1);
     }
   };
 
   const startQuiz = () => {
     setQuizStarted(true);
-    setQuestions([]); // Reset the questions array
-    setQuestionsAnswered(0); // Reset the questions answered counter
+    setQuestions([]);
+    setQuestionsAnswered(0);
+    setScore(0);
+    setAskedQuestions([]);
+    setQuizCompleted(false); // Reset quiz completion status
   };
 
   const shuffleArray = (array) => {
@@ -145,13 +145,10 @@ export default function App() {
 
   const generateIncorrectAnswers = (selectedHeader, correctAnswer, data) => {
     const incorrectAnswers = [];
-
-    // Collect all unique incorrect answers in a Set
     const uniqueIncorrectAnswers = new Set();
 
     while (uniqueIncorrectAnswers.size < 3 && uniqueIncorrectAnswers.size < data.length) {
       const randomData = data[Math.floor(Math.random() * data.length)];
-
       let incorrectAnswer;
       if (selectedHeader === 'Transliteration') {
         incorrectAnswer = randomData.Transliteration;
@@ -169,16 +166,21 @@ export default function App() {
       }
     }
 
-    // If there are not enough unique incorrect answers, fill the remaining slots with correct answers
     while (uniqueIncorrectAnswers.size < 3) {
       uniqueIncorrectAnswers.add(correctAnswer);
     }
 
-    // Convert the Set back to an array
     incorrectAnswers.push(...uniqueIncorrectAnswers);
 
     return incorrectAnswers;
   };
+
+  const navigateToSettings = () => {
+    setQuizCompleted(false); // Reset quiz completion status
+    setCurrentQuestion(0); // Reset the current question index
+    setQuizStarted(false); // Ensure the quiz is not running
+  };
+  
 
   return (
     <div className='container mt-5'>
@@ -188,7 +190,7 @@ export default function App() {
             <div className='col-md-6 offset-md-3'>
               <div className='card bg-dark-green text-black'>
                 <div className='card-header'>
-                  <span className='mr-2'>Question {currentQuestion + 1}</span>/{numQuestions}
+                  <span className='mr-2'>Question {questionsAnswered + 1}</span>/{numQuestions}
                 </div>
                 <div className='card-body'>
                   <h5 className='card-title'>{questions[currentQuestion].question}</h5>
@@ -214,64 +216,70 @@ export default function App() {
         )
       ) : (
         <>
-          <div className='row'>
-            <div className='col-md-6 offset-md-3'>
-              <div className='card bg-dark-green text-black'>
-                <div className='card-header'>Quiz Finished</div>
-                <div className='card-body'>
-                  {questionsAnswered > 0 && (
-                    <>
-                      <h5 className='card-title'>Your Score:</h5>
-                      <p className='card-text'>
-                        You scored {score} out of {questionsAnswered}
-                      </p>
-                    </>
-                  )}
+          {quizCompleted ? (
+            <div className='row'>
+              <div className='col-md-6 offset-md-3'>
+                <div className='card bg-dark-green text-black'>
+                  <div className='card-header'>Quiz Finished</div>
+                  <div className='card-body'>
+                    {questionsAnswered > 0 && (
+                      <>
+                        <h5 className='card-title'>Your Score:</h5>
+                        <p className='card-text'>
+                          You scored {score} out of {questionsAnswered}
+                        </p>
+                        <button className='btn btn-primary' onClick={navigateToSettings}>
+                          Go Back to Start
+                        </button>
+                      </>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className='row mt-3'>
-            <div className='col-md-6 offset-md-3'>
-              <div className='card bg-dark-green text-black'>
-                <div className='card-header'>Quiz Settings</div>
-                <div className='card-body'>
-                  <div className='mb-3'>
-                    <label>Select Unit:</label>
-                    <input
-                      type='text'
-                      className='form-control'
-                      onChange={(e) => setUnitRange(e.target.value)}
-                      placeholder={`Feel free to enter a range (e.g., 1-10)`}
-                    />
+          ) : (
+            <div className='row'>
+              <div className='col-md-6 offset-md-3'>
+                <div className='card bg-dark-green text-black'>
+                  <div className='card-header'>Quiz Settings</div>
+                  <div className='card-body'>
+                    <div className='mb-3'>
+                      <label>Select Unit:</label>
+                      <input
+                        type='text'
+                        className='form-control'
+                        onChange={(e) => setUnitRange(e.target.value)}
+                        placeholder={`Feel free to enter a single unit or a range (e.g., 1-10)`}
+                      />
+                    </div>
+                    <div className='mb-3'>
+                      <label>Number of Questions:</label>
+                      <input
+                        type='number'
+                        className='form-control'
+                        value={numQuestions}
+                        onChange={(e) => setNumQuestions(parseInt(e.target.value))}
+                      />
+                    </div>
+                    <div className='mb-3'>
+                      <label>Select Category:</label>
+                      <select
+                        className='form-select'
+                        value={category}
+                        onChange={(e) => setCategory(e.target.value)}
+                      >
+                        <option value='grammar'>Grammar</option>
+                        <option value='vocab'>Vocabulary</option>
+                      </select>
+                    </div>
+                    <button className='btn btn-primary' onClick={startQuiz}>
+                      Start
+                    </button>
                   </div>
-                  <div className='mb-3'>
-                    <label>Number of Questions:</label>
-                    <input
-                      type='number'
-                      className='form-control'
-                      value={numQuestions}
-                      onChange={(e) => setNumQuestions(parseInt(e.target.value))}
-                    />
-                  </div>
-                  <div className='mb-3'>
-                    <label>Select Category:</label>
-                    <select
-                      className='form-select'
-                      value={category}
-                      onChange={(e) => setCategory(e.target.value)}
-                    >
-                      <option value='grammar'>Grammar</option>
-                      <option value='vocab'>Vocabulary</option>
-                    </select>
-                  </div>
-                  <button className='btn btn-primary' onClick={startQuiz}>
-                    Start
-                  </button>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </>
       )}
     </div>
