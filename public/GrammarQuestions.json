@@ -1,0 +1,343 @@
+[
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 1,
+        "question": "What is the earliest form of the Hebrew script?",
+        "correct_answer": "The earliest form of the Hebrew script is from the Sinai desert and represents a Canaanite dialect of the 16th century B.C.E.",
+        "incorrect_answers": [
+            "The earliest form of the Hebrew script is from the 4th century B.C.E. originally thought to be invented by Ezra",
+            "The earliest form of the Hebrew script is from Ancient Greece.",
+            "The earliest form of the Hebrew script is from the 10th century B.C.E."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 1,
+        "question": "How did Proto-Canaanites develop their letters?",
+        "correct_answer": "Proto-Canaanites developed their letters by drawing a picture of something that began with the sound they wanted to represent.",
+        "incorrect_answers": [
+            "Proto-Canaanites developed their letters by copying Greek letters.",
+            "Proto-Canaanites developed their letters by using hieroglyphics taught to them by Egyptian traders.",
+            "Proto-Canaanites developed their letters by using Arabic script."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 1,
+        "question": "What are the two main historical changes in the Hebrew alphabet?",
+        "correct_answer": "The two main historical changes in the Hebrew alphabet are that the letters became more abstract and/or turned 90° or 180°.",
+        "incorrect_answers": [
+            "The two main historical changes in the Hebrew alphabet are that it became shorter and wider.",
+            "The two main historical changes in the Hebrew alphabet are that it became cursive and printed.",
+            "The two main historical changes in the Hebrew alphabet are that it added more vowels and removed consonants."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 1,
+        "question": "What are the characteristics of the Hebrew letter 'ל' (lámed)?",
+        "correct_answer": "The Hebrew letter 'ל' (lámed) represents the sound 'l' and is associated with the word 'light.'",
+        "incorrect_answers": [
+            "The Hebrew letter 'ל' (lámed) represents the sound 'm' and is associated with the word 'map.'",
+            "The Hebrew letter 'ל' (lámed) represents the sound 'n' and is associated with the word 'new.'",
+            "The Hebrew letter 'ל' (lámed) represents the sound 'r' and is associated with the word 'air.'"
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 1,
+        "question": "Which letters are considered 'final letters' in Hebrew?",
+        "correct_answer": "The 'final letters' in Hebrew are 'ם' (final mem) and 'ן' (final nun).",
+        "incorrect_answers": [
+            "The 'final letters' in Hebrew are 'א' (final alef) and 'ה' (final heh).",
+            "The 'final letters' in Hebrew are 'ח' (final ḥet) and 'ע' (final ayin).",
+            "The 'final letters' in Hebrew are 'ר' (final resh) and 'ש' (final shin)."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 1,
+        "question": "What are the 'final letters' in Hebrew?",
+        "correct_answer": "The 'final letters' in Hebrew are the forms that some letters take at the end of a word.",
+        "incorrect_answers": [
+            "The 'final letters' in Hebrew are the first letters of the alphabet.",
+            "The 'final letters' in Hebrew are the most commonly used letters.",
+            "The 'final letters' in Hebrew are not significant in the language."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 1,
+        "question": "How is the Hebrew letter 'ר' pronounced?",
+        "correct_answer": "The Hebrew letter 'ר' is pronounced as more alveolar and is not exactly like an English r.",
+        "incorrect_answers": [
+            "The Hebrew letter 'ר' is pronounced exactly like an English r.",
+            "The Hebrew letter 'ר' is silent.",
+            "The Hebrew letter 'ר' is pronounced like an English l."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 1,
+        "question": "What are the guttural letters in Hebrew, and why are they called so?",
+        "correct_answer": "The guttural letters in Hebrew are 'א' (alef), 'ה' (heh), 'ח' (ḥet), 'ע' (ayin), and sometimes 'ר' (resh). They are called guttural because they are pronounced in the throat.",
+        "incorrect_answers": [
+            "The guttural letters in Hebrew are 'ב' (bet), 'ג' (gimel), 'ד' (dalet), and 'כ' (kaf). They are called guttural because they are pronounced with a high pitch.",
+            "The guttural letters in Hebrew are 'ש' (shin), 'ת' (tav), 'צ' (tsadi), and 'פ' (peh). They are called guttural because they are pronounced with a nasal sound.",
+            "The guttural letters in Hebrew are 'מ' (mem), 'ל' (lamed), 'נ' (nun), and 'ו' (vav). They are called guttural because they are pronounced with a deep voice."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 1,
+        "question": "What does the Hebrew letter 'ח' sound like, and can you provide an example?",
+        "correct_answer": "The Hebrew letter 'ח' sounds like the 'ch' in the name of the German composer Bach.'",
+        "incorrect_answers": [
+            "The Hebrew letter 'ח' sounds like the English 'ch' as in cheese.",
+            "The Hebrew letter 'ח' sounds like the English letter 'h'.",
+            "The Hebrew letter 'ח' sounds like the English letter 'b'."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 2,
+        "question": "What is the characteristic of Hebrew letters 'ב' (bet) and 'כּ' (kaf) when they have a dagesh (dot in the middle)?",
+        "correct_answer": "With the dagesh, these letters are pronounced as plosive consonants in which the air flow through the mouth stops completely.",
+        "incorrect_answers": [
+            "With the dagesh, these letters are pronounced as fricative consonants with no complete blockage of air flow.",
+            "With the dagesh, these letters are pronounced as vowels.",
+            "With the dagesh, these letters are silent."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 2,
+        "question": "What can the Hebrew letters 'ו' (vav) and 'י' (yod) mark besides consonants?",
+        "correct_answer": "These two letters can also mark vowels.",
+        "incorrect_answers": [
+            "These two letters can only mark consonants.",
+            "These two letters can mark neither consonants nor vowels.",
+            "These two letters can mark punctuation marks."
+        ]
+    },    
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 2,
+        "question": "What is the difference between the Hebrew letters 'ט' (tet) and 'ת' (tav) in modern pronunciation?",
+        "correct_answer": "There is no difference in modern pronunciation between the ט and the ת.",
+        "incorrect_answers": [
+            "The ט is pronounced with a [t] sound, while the ת is pronounced with a [th] sound.",
+            "The ט is pronounced with a [s] sound, while the ת is pronounced with a [sh] sound.",
+            "The ט is pronounced with a [k] sound, while the ת is pronounced with a [kh] sound."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 2,
+        "question": "What is the location of the dot at the top of the Hebrew letter 'ש' (shin) used to indicate?",
+        "correct_answer": "The location of the dot at the top of the letter ש is the only indicator of whether to pronounce [s] or [sh].",
+        "incorrect_answers": [
+            "The dot indicates whether the letter is capitalized or not.",
+            "The dot indicates whether the letter is a vowel or a consonant.",
+            "The dot has no specific significance in the pronunciation of the letter."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 2,
+        "question": "What is the transliteration of the Hebrew letter 'ב' (bet)?",
+        "correct_answer": "The transliteration of the Hebrew letter 'ב' (bet) is 'b'.",
+        "incorrect_answers": [
+            "The transliteration of the Hebrew letter 'ב' (bet) is 'v'.",
+            "The transliteration of the Hebrew letter 'ב' (bet) is 'p'.",
+            "The transliteration of the Hebrew letter 'ב' (bet) is 'g'."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 2,
+        "question": "What does the Hebrew letter 'ס' (samekh) sound like?",
+        "correct_answer": "The Hebrew letter 'ס' (samekh) sounds like [s] as in 'say'.",
+        "incorrect_answers": [
+            "The Hebrew letter 'ס' (samekh) sounds like [sh] as in 'ship'.",
+            "The Hebrew letter 'ס' (samekh) sounds like [t] as in 'tea'.",
+            "The Hebrew letter 'ס' (samekh) sounds like [d] as in 'dog'."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 2,
+        "question": "What does the Hebrew letter 'ז' (záyin) sound like?",
+        "correct_answer": "The Hebrew letter 'ז' (záyin) sounds like [z] as in 'zebra'.",
+        "incorrect_answers": [
+            "The Hebrew letter 'ז' (záyin) sounds like [s] as in 'say'.",
+            "The Hebrew letter 'ז' (záyin) sounds like [t] as in 'tea'.",
+            "The Hebrew letter 'ז' (záyin) sounds like [d] as in 'dog'."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 2,
+        "question": "What is the glottal stop in Hebrew and when is it typically heard?",
+        "correct_answer": "The glottal stop in Hebrew is a brief cutting-off of the air flow and is typically heard in the middle of the expression 'uh-oh.'",
+        "incorrect_answers": [
+            "The glottal stop in Hebrew is a type of vowel sound only used at the beginning of words.",
+            "The glottal stop in Hebrew is a sound only used at the end of words.",
+            "The glottal stop in Hebrew is a fricative sound similar to 'sh.'"
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "What were the initial Hebrew vowels represented by the mater lectionis letters י, ו, and ה?",
+        "correct_answer": "The initial Hebrew vowels represented by the mater lectionis letters י, ו, and ה were î (י), û (ו), and āh/ēh/ōh (ה).",
+        "incorrect_answers": [
+            "The initial Hebrew vowels represented by the mater lectionis letters י, ו, and ה were a, e, and i.",
+            "The initial Hebrew vowels represented by the mater lectionis letters י, ו, and ה were o, u, and e.",
+            "The mater lectionis letters did not represent any vowels initially."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "During which stage of Hebrew writing did the mater lectionis י and ו begin to be used inside words?",
+        "correct_answer": "The mater lectionis י and ו began to be used inside words after the exile of 586 B.C.E.",
+        "incorrect_answers": [
+            "The mater lectionis י and ו began to be used inside words in the 9th century B.C.E.",
+            "The mater lectionis י and ו began to be used inside words during the 6th century B.C.E.",
+            "The mater lectionis י and ו began to be used inside words in the 7th-9th centuries C.E."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "Which system of vowel writing used diacritic points to represent each of the vowels?",
+        "correct_answer": "The final stage of Hebrew vowel writing (7th-9th c. C.E.) used diacritic points to represent each of the vowels.",
+        "incorrect_answers": [
+            "The initial stage of Hebrew vowel writing (9th-6th c. B.C.E.) used diacritic points to represent each of the vowels.",
+            "The stage after the exile of 586 B.C.E. used diacritic points to represent each of the vowels.",
+            "The stage before the exile of 586 B.C.E. used diacritic points to represent each of the vowels."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "What is the pronunciation of all 'A' vowels in Hebrew?",
+        "correct_answer": "All 'A' vowels in Hebrew are pronounced as [ɑ] as in 'father.'",
+        "incorrect_answers": [
+            "All 'A' vowels in Hebrew are pronounced as [a] as in 'apple.'",
+            "All 'A' vowels in Hebrew are pronounced as [i] as in 'in.'",
+            "All 'A' vowels in Hebrew are pronounced as [e] as in 'let.'"
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "What are the names of the long 'A' vowels in Hebrew?",
+        "correct_answer": "The names of the long 'A' vowels in Hebrew are qamáts for plain long vowels and qamáts malé for mater lectionis long vowels.",
+        "incorrect_answers": [
+            "The names of the long 'A' vowels in Hebrew are patáḥ for plain long vowels and ā for mater lectionis long vowels.",
+            "The names of the long 'A' vowels in Hebrew are ā for plain long vowels and qamáts malé for mater lectionis long vowels.",
+            "The names of the long 'A' vowels in Hebrew are qamáts for plain long vowels and patáḥ for mater lectionis long vowels."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "What does the term 'mater lectionis' mean in Latin?",
+        "correct_answer": "The term 'mater lectionis' in Latin means 'reading mother.'",
+        "incorrect_answers": [
+            "The term 'mater lectionis' in Latin means 'silent mother.'",
+            "The term 'mater lectionis' in Latin means 'vocal mother.'",
+            "The term 'mater lectionis' in Latin has no specific meaning."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "What is the primary purpose of using mater lectionis in Hebrew?",
+        "correct_answer": "The primary purpose of using mater lectionis in Hebrew is to help indicate which vowels to read in the absence of written vowels.",
+        "incorrect_answers": [
+            "The primary purpose of using mater lectionis in Hebrew is to represent consonants.",
+            "The primary purpose of using mater lectionis in Hebrew is to indicate vowel length.",
+            "The primary purpose of using mater lectionis in Hebrew is to mark punctuation."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "What is the customary distinction between short and long vowels in Hebrew?",
+        "correct_answer": "The customary distinction between short and long vowels in Hebrew is based on vowel quantity (length).",
+        "incorrect_answers": [
+            "The customary distinction between short and long vowels in Hebrew is based on vowel quality.",
+            "The customary distinction between short and long vowels in Hebrew is based on the use of diacritic points.",
+            "The customary distinction between short and long vowels in Hebrew is not important."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "What is the most widely used tradition of vocalizing the biblical text in Hebrew?",
+        "correct_answer": "The most widely used tradition of vocalizing the biblical text in Hebrew is the Tiberian tradition.",
+        "incorrect_answers": [
+            "The most widely used tradition of vocalizing the biblical text in Hebrew is the initial stage of Hebrew writing tradition.",
+            "The most widely used tradition of vocalizing the biblical text in Hebrew is the tradition after the exile of 586 B.C.E.",
+            "The most widely used tradition of vocalizing the biblical text in Hebrew is the tradition before the exile of 586 B.C.E."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "Which mater lectionis letter continued to represent the vowels āh, ēh, and ōh at the end of words?",
+        "correct_answer": "The mater lectionis letter ה continued to represent the vowels āh, ēh, and ōh at the end of words.",
+        "incorrect_answers": [
+            "The mater lectionis letter י continued to represent the vowels āh, ēh, and ōh at the end of words.",
+            "The mater lectionis letter ו continued to represent the vowels āh, ēh, and ōh at the end of words.",
+            "The mater lectionis letters י and ו continued to represent the vowels āh, ēh, and ōh at the end of words."
+        ]
+    },
+    {
+        "category": "grammar",
+        "type": "multiple",
+        "Unit": 3,
+        "question": "What makes biblical Hebrew transliteration complicated?",
+        "correct_answer": "What makes biblical Hebrew transliteration complicated is the existence of multiple systems, including mater lectionis and diacritic points, existing simultaneously, one on top of the other.",
+        "incorrect_answers": [
+            "What makes biblical Hebrew transliteration complicated is the lack of vowels in the Hebrew script.",
+            "What makes biblical Hebrew transliteration complicated is the absence of mater lectionis and diacritic points.",
+            "What makes biblical Hebrew transliteration uncomplicated is the consistent use of diacritic points."
+        ]
+    }
+    
+]
+    
+    
+    
+
