@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/biblical-hebrew-a/static/css/main.6ccd65a8.css",
-    "main.js": "/biblical-hebrew-a/static/js/main.aef1287b.js",
+    "main.js": "/biblical-hebrew-a/static/js/main.953902ee.js",
     "static/js/787.6a6ada03.chunk.js": "/biblical-hebrew-a/static/js/787.6a6ada03.chunk.js",
     "index.html": "/biblical-hebrew-a/index.html",
     "main.6ccd65a8.css.map": "/biblical-hebrew-a/static/css/main.6ccd65a8.css.map",
-    "main.aef1287b.js.map": "/biblical-hebrew-a/static/js/main.aef1287b.js.map",
+    "main.953902ee.js.map": "/biblical-hebrew-a/static/js/main.953902ee.js.map",
     "787.6a6ada03.chunk.js.map": "/biblical-hebrew-a/static/js/787.6a6ada03.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ccd65a8.css",
-    "static/js/main.aef1287b.js"
+    "static/js/main.953902ee.js"
   ]
 }
