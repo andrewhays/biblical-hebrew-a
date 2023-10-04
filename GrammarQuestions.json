@@ -2,7 +2,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 1,
+        "Unit": 1,
         "question": "What is the earliest form of the Hebrew script?",
         "correct_answer": "The earliest form of the Hebrew script is from the Sinai desert and represents a Canaanite dialect of the 16th century B.C.E.",
         "incorrect_answers": [
@@ -14,7 +14,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 1,
+        "Unit": 1,
         "question": "How did Proto-Canaanites develop their letters?",
         "correct_answer": "Proto-Canaanites developed their letters by drawing a picture of something that began with the sound they wanted to represent.",
         "incorrect_answers": [
@@ -26,7 +26,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 1,
+        "Unit": 1,
         "question": "What are the two main historical changes in the Hebrew alphabet?",
         "correct_answer": "The two main historical changes in the Hebrew alphabet are that the letters became more abstract and/or turned 90° or 180°.",
         "incorrect_answers": [
@@ -38,7 +38,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 1,
+        "Unit": 1,
         "question": "What are the characteristics of the Hebrew letter 'ל' (lámed)?",
         "correct_answer": "The Hebrew letter 'ל' (lámed) represents the sound 'l' and is associated with the word 'light.'",
         "incorrect_answers": [
@@ -50,7 +50,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 1,
+        "Unit": 1,
         "question": "Which letters are considered 'final letters' in Hebrew?",
         "correct_answer": "The 'final letters' in Hebrew are 'ם' (final mem) and 'ן' (final nun).",
         "incorrect_answers": [
@@ -62,7 +62,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 1,
+        "Unit": 1,
         "question": "What are the 'final letters' in Hebrew?",
         "correct_answer": "The 'final letters' in Hebrew are the forms that some letters take at the end of a word.",
         "incorrect_answers": [
@@ -74,7 +74,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 1,
+        "Unit": 1,
         "question": "How is the Hebrew letter 'ר' pronounced?",
         "correct_answer": "The Hebrew letter 'ר' is pronounced as more alveolar and is not exactly like an English r.",
         "incorrect_answers": [
@@ -86,7 +86,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 1,
+        "Unit": 1,
         "question": "What are the guttural letters in Hebrew, and why are they called so?",
         "correct_answer": "The guttural letters in Hebrew are 'א' (alef), 'ה' (heh), 'ח' (ḥet), 'ע' (ayin), and sometimes 'ר' (resh). They are called guttural because they are pronounced in the throat.",
         "incorrect_answers": [
@@ -98,7 +98,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 1,
+        "Unit": 1,
         "question": "What does the Hebrew letter 'ח' sound like, and can you provide an example?",
         "correct_answer": "The Hebrew letter 'ח' sounds like the 'ch' in the name of the German composer Bach.'",
         "incorrect_answers": [
@@ -110,7 +110,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 2,
+        "Unit": 2,
         "question": "What is the characteristic of Hebrew letters 'ב' (bet) and 'כּ' (kaf) when they have a dagesh (dot in the middle)?",
         "correct_answer": "With the dagesh, these letters are pronounced as plosive consonants in which the air flow through the mouth stops completely.",
         "incorrect_answers": [
@@ -122,7 +122,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 2,
+        "Unit": 2,
         "question": "What can the Hebrew letters 'ו' (vav) and 'י' (yod) mark besides consonants?",
         "correct_answer": "These two letters can also mark vowels.",
         "incorrect_answers": [
@@ -134,7 +134,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 2,
+        "Unit": 2,
         "question": "What is the difference between the Hebrew letters 'ט' (tet) and 'ת' (tav) in modern pronunciation?",
         "correct_answer": "There is no difference in modern pronunciation between the ט and the ת.",
         "incorrect_answers": [
@@ -146,7 +146,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 2,
+        "Unit": 2,
         "question": "What is the location of the dot at the top of the Hebrew letter 'ש' (shin) used to indicate?",
         "correct_answer": "The location of the dot at the top of the letter ש is the only indicator of whether to pronounce [s] or [sh].",
         "incorrect_answers": [
@@ -158,7 +158,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 2,
+        "Unit": 2,
         "question": "What is the transliteration of the Hebrew letter 'ב' (bet)?",
         "correct_answer": "The transliteration of the Hebrew letter 'ב' (bet) is 'b'.",
         "incorrect_answers": [
@@ -170,7 +170,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 2,
+        "Unit": 2,
         "question": "What does the Hebrew letter 'ס' (samekh) sound like?",
         "correct_answer": "The Hebrew letter 'ס' (samekh) sounds like [s] as in 'say'.",
         "incorrect_answers": [
@@ -182,7 +182,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 2,
+        "Unit": 2,
         "question": "What does the Hebrew letter 'ז' (záyin) sound like?",
         "correct_answer": "The Hebrew letter 'ז' (záyin) sounds like [z] as in 'zebra'.",
         "incorrect_answers": [
@@ -194,7 +194,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 2,
+        "Unit": 2,
         "question": "What is the glottal stop in Hebrew and when is it typically heard?",
         "correct_answer": "The glottal stop in Hebrew is a brief cutting-off of the air flow and is typically heard in the middle of the expression 'uh-oh.'",
         "incorrect_answers": [
@@ -206,7 +206,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "What were the initial Hebrew vowels represented by the mater lectionis letters י, ו, and ה?",
         "correct_answer": "The initial Hebrew vowels represented by the mater lectionis letters י, ו, and ה were î (י), û (ו), and āh/ēh/ōh (ה).",
         "incorrect_answers": [
@@ -218,7 +218,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "During which stage of Hebrew writing did the mater lectionis י and ו begin to be used inside words?",
         "correct_answer": "The mater lectionis י and ו began to be used inside words after the exile of 586 B.C.E.",
         "incorrect_answers": [
@@ -230,7 +230,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "Which system of vowel writing used diacritic points to represent each of the vowels?",
         "correct_answer": "The final stage of Hebrew vowel writing (7th-9th c. C.E.) used diacritic points to represent each of the vowels.",
         "incorrect_answers": [
@@ -242,7 +242,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "What is the pronunciation of all 'A' vowels in Hebrew?",
         "correct_answer": "All 'A' vowels in Hebrew are pronounced as [ɑ] as in 'father.'",
         "incorrect_answers": [
@@ -254,7 +254,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "What are the names of the long 'A' vowels in Hebrew?",
         "correct_answer": "The names of the long 'A' vowels in Hebrew are qamáts for plain long vowels and qamáts malé for mater lectionis long vowels.",
         "incorrect_answers": [
@@ -266,7 +266,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "What does the term 'mater lectionis' mean in Latin?",
         "correct_answer": "The term 'mater lectionis' in Latin means 'reading mother.'",
         "incorrect_answers": [
@@ -278,7 +278,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "What is the primary purpose of using mater lectionis in Hebrew?",
         "correct_answer": "The primary purpose of using mater lectionis in Hebrew is to help indicate which vowels to read in the absence of written vowels.",
         "incorrect_answers": [
@@ -290,7 +290,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "What is the customary distinction between short and long vowels in Hebrew?",
         "correct_answer": "The customary distinction between short and long vowels in Hebrew is based on vowel quantity (length).",
         "incorrect_answers": [
@@ -302,7 +302,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "What is the most widely used tradition of vocalizing the biblical text in Hebrew?",
         "correct_answer": "The most widely used tradition of vocalizing the biblical text in Hebrew is the Tiberian tradition.",
         "incorrect_answers": [
@@ -314,7 +314,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "Which mater lectionis letter continued to represent the vowels āh, ēh, and ōh at the end of words?",
         "correct_answer": "The mater lectionis letter ה continued to represent the vowels āh, ēh, and ōh at the end of words.",
         "incorrect_answers": [
@@ -326,7 +326,7 @@
     {
         "category": "grammar",
         "type": "multiple",
-        "unit": 3,
+        "Unit": 3,
         "question": "What makes biblical Hebrew transliteration complicated?",
         "correct_answer": "What makes biblical Hebrew transliteration complicated is the existence of multiple systems, including mater lectionis and diacritic points, existing simultaneously, one on top of the other.",
         "incorrect_answers": [
